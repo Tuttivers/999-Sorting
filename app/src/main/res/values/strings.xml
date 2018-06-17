@@ -4,4 +4,5 @@
     <string name="error">Error</string>
     <string name="sorting">Sorting</string>
     <string name="invalid_url_address">Invalid url address</string>
+    <string name="app_package_999">md.simpals.md999</string>
 </resources>

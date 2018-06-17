@@ -79,9 +79,13 @@ public class MainActivity extends AppCompatActivity implements AppRecyclerViewAd
     @Override
     public void onItemClick(Item item) {
         String url = Uri999Helper.BASE_999_URL + item.link;
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
-        startActivity(i);
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        String package999 = getString(R.string.app_package_999);
+        if (getPackageManager().getLaunchIntentForPackage(package999) != null) {
+            intent.setPackage(package999);
+        }
+        intent.setData(Uri.parse(url));
+        startActivity(intent);
     }
 
     private void processUri(Uri uri) {
