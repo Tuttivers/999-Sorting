@@ -27,7 +27,6 @@
 
                 <data android:scheme="http" />
                 <data android:scheme="https" />
-                <data android:host="999.md" />
                 <data android:host="m.999.md" />
                 <data android:host="999.md" />
                 <data android:host="www.999.md" />

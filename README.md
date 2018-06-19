@@ -9,4 +9,5 @@
 <img src="/screenshots/screen_1.png" width="270px" height="480px"></img> <img src="/screenshots/screen_2.png" width="270px" height="480px"></img> <img src="/screenshots/screen_3.png" width="270px" height="480px"></img> 
 
 
-Скачать приложение => <a href="https://cloud.mail.ru/public/K9ni/LXH1KoQGF">999 Sorting.apk</a> (Mail Cloud)
+Скачать приложение => <a href="https://github.com/Tuttivers/999-Sorting/raw/master/999-sorting.apk">999-Sorting.apk</a>
+

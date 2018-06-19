@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity implements AppRecyclerViewAd
     private ProgressDialog progressDialog;
 
     private List<Item> items;
-
     private boolean isResumed;
+    private int firstVisiblePosition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +55,6 @@ public class MainActivity extends AppCompatActivity implements AppRecyclerViewAd
                 return false;
             }
         });
-        listView.setLayoutManager(new LinearLayoutManager(this));
-
         handleIntent(getIntent());
     }
 
@@ -142,6 +140,7 @@ public class MainActivity extends AppCompatActivity implements AppRecyclerViewAd
         isResumed = true;
         if (items != null) {
             listView.setAdapter(new AppRecyclerViewAdapter(this, items));
+            listView.getLayoutManager().scrollToPosition(firstVisiblePosition);
         }
     }
 
@@ -149,5 +148,6 @@ public class MainActivity extends AppCompatActivity implements AppRecyclerViewAd
     protected void onPause() {
         super.onPause();
         isResumed = false;
+        firstVisiblePosition = ((LinearLayoutManager)listView.getLayoutManager()).findFirstVisibleItemPosition();
     }
 }
