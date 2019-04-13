@@ -10,7 +10,7 @@
         android:id="@+id/seacrh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:queryHint="http://999.md/{lang}/list/*"
+        app:queryHint="https://999.md/{lang}/list/*"
         app:searchHintIcon="@null"
         app:searchIcon="@drawable/ic_web" />
 

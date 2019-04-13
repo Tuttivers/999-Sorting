@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class Uri999Helper {
 
-    public static final String BASE_999_URL = "http://www.999.md";
+    public static final String BASE_999_URL = "https://www.999.md";
 
     private static final String VIEW_TYPE_KEY = "view_type";
     private static final String VIEW_TYPE_DETAIL = "detail";
